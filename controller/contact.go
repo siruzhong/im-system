@@ -65,7 +65,7 @@ func JoinCommunity(w http.ResponseWriter, req *http.Request) {
 	if err != nil {
 		respond.ResponseFail(w, err.Error())
 	} else {
-		respond.ResponseOk(w, nil, "")
+		respond.ResponseOk(w, nil, "群聊加入成功")
 	}
 }
 

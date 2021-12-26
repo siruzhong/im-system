@@ -359,11 +359,11 @@
                             if (isNaN(e.value) || e.value <= 0) {
                                 mui.toast('格式错误');
                             } else {
-                                //mui.toast(e.value);
+                                mui.toast(e.value);
                                 that._joincomunity(e.value)
                             }
                         } else {
-                            //mui.toast('您取消了入库');
+                            mui.toast('您取消了加入群聊');
                         }
                     }, 'div');
                     document.querySelector('.mui-popup-input input').type = 'number';
@@ -371,9 +371,8 @@
                 _joincomunity: function (dstobj) {
                     var that = this;
                     post("contact/joincommunity", {userid: userId(), dstid: dstobj}, function (res) {
-                        if (res.code === 200) {
+                        if (res.code === 0) {
                             mui.toast("添加成功");
-                            location.href = "/chat/group.shtml";
                             that.loadcommunitys();
                         } else {
                             mui.toast(res.msg);
