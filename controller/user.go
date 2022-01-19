@@ -12,8 +12,8 @@ import (
 // Login 用户登陆
 func Login(writer http.ResponseWriter, request *http.Request) {
 	_ = request.ParseForm()
-	mobile := request.PostForm.Get("mobile")
-	password := request.PostForm.Get("password")
+	mobile := request.PostForm.Get("mobile")     // 获取前端mobile参数
+	password := request.PostForm.Get("password") // 获取前端参数
 	user, err := service.UserService{}.Login(mobile, password)
 	if err != nil {
 		respond.ResponseFail(writer, err.Error())

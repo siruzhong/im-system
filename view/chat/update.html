@@ -50,7 +50,7 @@
                        accept="image/png,image/jpeg" type="file" class="mui-input-clear mui-input"
                        placeholder="请输入群名称">
 
-                <img id="head-img" :src="com.icon" style="border-radius:50%;"
+                <img id="head-img" :src="com.avatar" style="border-radius:50%;"
                      class="mui-media-object mui-pull-right head-img">
                 <div class="mui-media-body">
                     用户头像<p class="mui-ellipsis">点击右侧上传更改您的头像</p>
@@ -96,7 +96,7 @@
                 if (res.code != 0) {
                     mui.toast(res.msg)
                 } else {
-                    app.com.icon = res.data;
+                    app.com.avatar = res.data;
                     mui.toast("上传成功")
                 }
             }
