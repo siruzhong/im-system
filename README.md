@@ -269,7 +269,7 @@ type User struct {
 
 03_个人中心
 
-![image-20220119223839589](/Users/zhongsiru/Library/Application Support/typora-user-images/image-20220119223839589.png)
+![2](https://gitee.com/zhong_siru/images2/raw/master//img/2.png)
 
 04_添加好友
 
