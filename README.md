@@ -40,19 +40,19 @@
 
        Controller控制层: 处理数据
 
-       ![image-20220119215030731](https://gitee.com/zhong_siru/images2/raw/master//img/image-20220119215030731.png)
+       ![image-20220119215030731](https://gitee.com/bareth/images2/raw/master//img/image-20220119215030731.png)
 
     2. MVVM是Model-View-ViewModel的缩写，是为了解决前端的响应式编程而生，由于前端网页混合了HTML、CSS和JavaScript，而且页面众多，代码的组织和维护难度复杂，所以通过ViewModel实现View和Model的双向绑定。
 
-       ![img](https://gitee.com/zhong_siru/images2/raw/master//img/wps7B1rqz.jpg)
+       ![img](https://gitee.com/bareth/images2/raw/master//img/wps7B1rqz.jpg)
 
 + **代码层级目录介绍**：
 
-  <img src="https://gitee.com/zhong_siru/images2/raw/master//img/image-20220119215120035.png" alt="image-20220119215120035" style="zoom: 50%;" /> 
+  <img src="https://gitee.com/bareth/images2/raw/master//img/image-20220119215120035.png" alt="image-20220119215120035" style="zoom: 50%;" /> 
 
 + **项目的完整架构设计**如下图所示：
 
-  ![img](https://gitee.com/zhong_siru/images2/raw/master//img/wpsxqHqRm.jpg)
+  ![img](https://gitee.com/bareth/images2/raw/master//img/wpsxqHqRm.jpg)
 
 
 
@@ -74,7 +74,7 @@
 
 1. community群聊表
 
-![img](https://gitee.com/zhong_siru/images2/raw/master//img/wpsqiAXs3.jpg)
+![img](https://gitee.com/bareth/images2/raw/master//img/wpsqiAXs3.jpg)
 
 ```go
 // Community 群聊结构体
@@ -91,7 +91,7 @@ type Community struct {
 
 2. contact聊天会话表
 
-![img](https://gitee.com/zhong_siru/images2/raw/master//img/wps0dYH5i.jpg)
+![img](https://gitee.com/bareth/images2/raw/master//img/wps0dYH5i.jpg)
 
 ```go
 // Contact 会话结构体
@@ -108,7 +108,7 @@ type Contact struct {
 
 3. user用户表
 
-![img](https://gitee.com/zhong_siru/images2/raw/master//img/wpsR5Zqml.jpg)
+![img](https://gitee.com/bareth/images2/raw/master//img/wpsR5Zqml.jpg)
 
 ```go
 // User 用户结构体
@@ -133,97 +133,97 @@ type User struct {
 
 所有的路由函数如下图所示，每个函数的功能都有完整注释
 
-![image-20220119215958620](https://gitee.com/zhong_siru/images2/raw/master//img/image-20220119215958620.png)
+![image-20220119215958620](https://gitee.com/bareth/images2/raw/master//img/image-20220119215958620.png)
 
 ### 5.2.1、用户登陆
 
 用户登陆controller层代码：
 
-![img](https://gitee.com/zhong_siru/images2/raw/master//img/wps439Kxd.jpg)
+![img](https://gitee.com/bareth/images2/raw/master//img/wps439Kxd.jpg)
 
 用户登陆service层代码：
 
-![img](https://gitee.com/zhong_siru/images2/raw/master//img/wpsN92A15.jpg)
+![img](https://gitee.com/bareth/images2/raw/master//img/wpsN92A15.jpg)
 
 ### 5.2.2、用户注册
 
 用户注册controller层代码：
 
-![img](https://gitee.com/zhong_siru/images2/raw/master//img/wpstvKd0P.jpg)
+![img](https://gitee.com/bareth/images2/raw/master//img/wpstvKd0P.jpg)
 
 用户注册service层代码：
 
-![img](https://gitee.com/zhong_siru/images2/raw/master//img/wpsAmhUZL.jpg)
+![img](https://gitee.com/bareth/images2/raw/master//img/wpsAmhUZL.jpg)
 
 ### 5.2.3、用户信息修改
 
 用户信息修改controller层代码：
 
-![img](https://gitee.com/zhong_siru/images2/raw/master//img/wpssOs06L.jpg)
+![img](https://gitee.com/bareth/images2/raw/master//img/wpssOs06L.jpg)
 
 用户信息修改service层代码：
 
-![img](https://gitee.com/zhong_siru/images2/raw/master//img/wpsrnCJWo.jpg)
+![img](https://gitee.com/bareth/images2/raw/master//img/wpsrnCJWo.jpg)
 
 ### 5.2.4、查找指定用户
 
 查找指定用户controller层代码：
 
-![img](https://gitee.com/zhong_siru/images2/raw/master//img/wpsThGvsX.jpg)
+![img](https://gitee.com/bareth/images2/raw/master//img/wpsThGvsX.jpg)
 
 查找指定用户service层代码：
 
-![img](https://gitee.com/zhong_siru/images2/raw/master//img/wps8Nk2zf.jpg)
+![img](https://gitee.com/bareth/images2/raw/master//img/wps8Nk2zf.jpg)
 
 ### 5.2.5、加载群聊信息
 
 加载群聊信息controller层代码
 
-![image-20220119220905716](https://gitee.com/zhong_siru/images2/raw/master//img/image-20220119220905716.png)
+![image-20220119220905716](https://gitee.com/bareth/images2/raw/master//img/image-20220119220905716.png)
 
 加载群聊信息service层代码：
 
-![img](https://gitee.com/zhong_siru/images2/raw/master//img/wpsd9Ozd5.jpg)
+![img](https://gitee.com/bareth/images2/raw/master//img/wpsd9Ozd5.jpg)
 
 ### 5.2.1、创建群聊
 
 创建群聊controller层代码：
 
-![image-20220119220944377](https://gitee.com/zhong_siru/images2/raw/master//img/image-20220119220944377.png)
+![image-20220119220944377](https://gitee.com/bareth/images2/raw/master//img/image-20220119220944377.png)
 
 创建群聊service层代码：
 
-![img](https://gitee.com/zhong_siru/images2/raw/master//img/wpsnNCYou.jpg)
+![img](https://gitee.com/bareth/images2/raw/master//img/wpsnNCYou.jpg)
 
 ### 5.2.7、加入群聊
 
 加入群聊controller层代码：
 
-![img](https://gitee.com/zhong_siru/images2/raw/master//img/wpscB4K5O.jpg)
+![img](https://gitee.com/bareth/images2/raw/master//img/wpscB4K5O.jpg)
 
 加入群聊service层代码：
 
-![img](https://gitee.com/zhong_siru/images2/raw/master//img/wpsKUQcry.jpg)
+![img](https://gitee.com/bareth/images2/raw/master//img/wpsKUQcry.jpg)
 
 ### 5.2.8、加载所有好友
 
 加载所有好友controller层代码：
 
-![img](https://gitee.com/zhong_siru/images2/raw/master//img/wpsAVlEff.jpg)
+![img](https://gitee.com/bareth/images2/raw/master//img/wpsAVlEff.jpg)
 
 加载所有好友service层代码：
 
-![img](https://gitee.com/zhong_siru/images2/raw/master//img/wpsJ1jyC5.jpg)
+![img](https://gitee.com/bareth/images2/raw/master//img/wpsJ1jyC5.jpg)
 
 ### 5.2.9、添加好友
 
 添加好友controller层代码：
 
-![img](https://gitee.com/zhong_siru/images2/raw/master//img/wpsXoRJ75.jpg)
+![img](https://gitee.com/bareth/images2/raw/master//img/wpsXoRJ75.jpg)
 
 添加好友service层代码：
 
-![img](https://gitee.com/zhong_siru/images2/raw/master//img/wpsZipRoU.jpg)
+![img](https://gitee.com/bareth/images2/raw/master//img/wpsZipRoU.jpg)
 
 ### 5.2.10、聊天
 
@@ -231,73 +231,73 @@ type User struct {
 
 1. 会话conversation结构体
 
-![img](https://gitee.com/zhong_siru/images2/raw/master//img/wpswghfX1.jpg)
+![img](https://gitee.com/bareth/images2/raw/master//img/wpswghfX1.jpg)
 
 2. 全局变量
 
-![img](https://gitee.com/zhong_siru/images2/raw/master//img/wpskBEqOF.jpg)
+![img](https://gitee.com/bareth/images2/raw/master//img/wpskBEqOF.jpg)
 
 聊天controller层代码：
 
-![image-20220119221512237](https://gitee.com/zhong_siru/images2/raw/master//img/image-20220119221512237.png)
+![image-20220119221512237](https://gitee.com/bareth/images2/raw/master//img/image-20220119221512237.png)
 
 发送逻辑代码：
 
-![image-20220119221534215](https://gitee.com/zhong_siru/images2/raw/master//img/image-20220119221534215.png)
+![image-20220119221534215](https://gitee.com/bareth/images2/raw/master//img/image-20220119221534215.png)
 
 接收逻辑代码：
 
-![img](https://gitee.com/zhong_siru/images2/raw/master//img/wpsmqgEFT.jpg)
+![img](https://gitee.com/bareth/images2/raw/master//img/wpsmqgEFT.jpg)
 
 发送消息代码：
 
-![image-20220119221620600](https://gitee.com/zhong_siru/images2/raw/master//img/image-20220119221620600.png)
+![image-20220119221620600](https://gitee.com/bareth/images2/raw/master//img/image-20220119221620600.png)
 
 后端通用调度逻辑代码：
 
-![image-20220119222529101](https://gitee.com/zhong_siru/images2/raw/master//img/image-20220119222529101.png)
+![image-20220119222529101](https://gitee.com/bareth/images2/raw/master//img/image-20220119222529101.png)
 
 ## 5.3、功能截图
 
 01_用户登陆
 
-![image-20220119224457458](https://gitee.com/zhong_siru/images2/raw/master//img/image-20220119224457458.png)
+![image-20220119224457458](https://gitee.com/bareth/images2/raw/master//img/image-20220119224457458.png)
 
 02_用户注册
 
-![img](https://gitee.com/zhong_siru/images2/raw/master//img/wpsAfL6MX.jpg)
+![img](https://gitee.com/bareth/images2/raw/master//img/wpsAfL6MX.jpg)
 
 03_个人中心
 
-![2](https://gitee.com/zhong_siru/images2/raw/master//img/2.png)
+![2](https://gitee.com/bareth/images2/raw/master//img/2.png)
 
 04_添加好友
 
-![](https://gitee.com/zhong_siru/images2/raw/master//img/image-20220119223951993.png)
+![](https://gitee.com/bareth/images2/raw/master//img/image-20220119223951993.png)
 
 05_加入群聊
 
-![img](https://gitee.com/zhong_siru/images2/raw/master//img/wpsxjyItT.jpg)
+![img](https://gitee.com/bareth/images2/raw/master//img/wpsxjyItT.jpg)
 
 06_修改个人信息
 
-![img](https://gitee.com/zhong_siru/images2/raw/master//img/wpsVaeiYU.jpg)
+![img](https://gitee.com/bareth/images2/raw/master//img/wpsVaeiYU.jpg)
 
 07_好友列表
 
-![img](https://gitee.com/zhong_siru/images2/raw/master//img/wpsRYWBaK.jpg)
+![img](https://gitee.com/bareth/images2/raw/master//img/wpsRYWBaK.jpg)
 
 08_好友聊天(可以发送表情包和图片)
 
-![image-20220119224134280](https://gitee.com/zhong_siru/images2/raw/master//img/image-20220119224134280.png)
+![image-20220119224134280](https://gitee.com/bareth/images2/raw/master//img/image-20220119224134280.png)
 
 09_群聊列表
 
-![image-20220119224213834](https://gitee.com/zhong_siru/images2/raw/master//img/image-20220119224213834.png)
+![image-20220119224213834](https://gitee.com/bareth/images2/raw/master//img/image-20220119224213834.png)
 
 10_群聊页面
 
-![img](https://gitee.com/zhong_siru/images2/raw/master//img/wpsxuJqqg.jpg)
+![img](https://gitee.com/bareth/images2/raw/master//img/wpsxuJqqg.jpg)
 
 
 
@@ -307,22 +307,22 @@ type User struct {
 
 用户注册时密码经过md5加密，且登陆需要携带加密token，根据token校验结果来决定是否登陆
 
-![img](https://gitee.com/zhong_siru/images2/raw/master//img/wpsyZHCni.jpg)
+![img](https://gitee.com/bareth/images2/raw/master//img/wpsyZHCni.jpg)
 
 **2. Conn的维护**
 
 聊天分为私聊和群聊两种方式，一个用户可能与多个用户建立连接，因此通过一个会话结构体来	维持用户的conn，然后创建一个clientMap用来存放每个用户与其对应的会话
 
-![img](https://gitee.com/zhong_siru/images2/raw/master//img/wps5CUirH.jpg)
+![img](https://gitee.com/bareth/images2/raw/master//img/wps5CUirH.jpg)
 
 **3. 并发修改异常问题**
 
 由于多个用户可能对同一个clientMap进行操作，可能会出现并发修改异常问题，所以用读写锁	来保证并发情况下的原子性
 
-![img](https://gitee.com/zhong_siru/images2/raw/master//img/wpsCkPpX2.jpg)
+![img](https://gitee.com/bareth/images2/raw/master//img/wpsCkPpX2.jpg)
 
 **4. 数据库的安全修改**
 
 由于存在多用户对数据库的读写进行操作，为了避免修改冲突，对数据库对写操作采用事物进行控制
 
-![1](https://gitee.com/zhong_siru/images2/raw/master//img/1.png)
+![1](https://gitee.com/bareth/images2/raw/master//img/1.png)
